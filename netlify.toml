@@ -1,0 +1,22 @@
+[build]
+  # Publish the current folder (Freshbites) as a static site
+  publish = "."
+
+  # No build command required for plain HTML/CSS/JS site
+  command = ""
+
+# Optional redirects - serve index.html for client-side routes (safe for static multi-page sites)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false
+[build]
+  publish = "."
+  command = ""
+
+# Optional redirect to make client-side routing work (safe for static sites)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
