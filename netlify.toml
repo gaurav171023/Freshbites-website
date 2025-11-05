@@ -1,11 +1,6 @@
-[#] Netlify configuration - single [build] table and one redirects block
-[#] fixed: removed duplicate [build] entries on 2025-11-06
+# Netlify configuration - single [build] table and one redirects block
+# Fixed: removed duplicate [build] entries on 2025-11-06
 
-[#] (This comment forces a tiny change so Netlify re-runs a fresh build)
-
-[#]
-[#]
-[#]
 [build]
   # Publish the current folder (Freshbites) as a static site
   publish = "."
@@ -13,8 +8,8 @@
   # No build command required for plain HTML/CSS/JS site
   command = ""
 
-# Redirect all requests to index.html (useful for SPA routing; harmless for static multi-page sites)
 [[redirects]]
+  # Redirect all requests to index.html (useful for SPA routing; harmless for static multi-page sites)
   from = "/*"
   to = "/index.html"
   status = 200
