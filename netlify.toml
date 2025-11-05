@@ -1,5 +1,11 @@
-## Netlify configuration - single [build] table and one redirects block
+[#] Netlify configuration - single [build] table and one redirects block
+[#] fixed: removed duplicate [build] entries on 2025-11-06
 
+[#] (This comment forces a tiny change so Netlify re-runs a fresh build)
+
+[#]
+[#]
+[#]
 [build]
   # Publish the current folder (Freshbites) as a static site
   publish = "."
